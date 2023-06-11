@@ -170,3 +170,18 @@ equalSign.addEventListener('click', function() {
         console.log('le résultat est ' + result)
     }
 });
+
+
+// History
+// resultBox.addEventListener('input', function() {
+//     let historyDiv = document.getElementById('history');
+//     historyDiv.textContent = resultBox.textContent;
+// });
+
+// equalSign.addEventListener('click', function() {
+//     let historyDiv = document.getElementById('history');
+//     historyDiv.textContent += resultBox.textContent + '\n';
+
+//     // Faire défiler automatiquement vers le bas
+//     historyDiv.scrollTop = historyDiv.scrollHeight;
+// });

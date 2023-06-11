@@ -120,3 +120,13 @@ div:not(#result):not(#info) {
 #info ul {
     list-style: none;
 }
+
+/* #history {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(21, 21, 27);
+    padding: 5px;
+} */
