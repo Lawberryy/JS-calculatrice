@@ -19,20 +19,20 @@ main {
 }
 
 .iphone {
-    width: 340px;
+    width: 280px;
     position: absolute;
-    bottom: -12px;
+    bottom: -10px;
 }
 
 #calculator {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 4fr 1fr 1fr 1fr 1fr 1fr;
-    height: 655px;
-    width: 306px;
+    height: 540px;
+    width: 252px;
     background-color: rgb(21, 21, 27);
     padding: 10px;
-    border-radius: 43px;
+    border-radius: 34px;
     z-index: 1;
 }
 
@@ -41,11 +41,11 @@ main {
     grid-row: 1/2;
     font-size: 55px;
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     align-items: flex-end;
-    padding-right: 10px;
+    padding-left: 10px;
     padding-bottom: 12px;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 /* #delete {
@@ -71,12 +71,12 @@ main {
     background-color: coral;
 } */
 
-div:not(#result) {
+div:not(#result):not(#info) {
     cursor: pointer; 
-    font-size: 24px; 
+    font-size: 20px; 
     border-radius: 50%; 
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +98,7 @@ div:not(#result) {
     background-color: rgb(96, 97, 100, 0.6) !important;
 }
 #digit0 {
-    width: 120px !important;
+    width: 100px !important;
 }
 
 #comma {grid-column: 3/4; grid-row: 6/7;}
@@ -106,4 +106,17 @@ div:not(#result) {
 #reset, #remove, #percent {
     background-color: rgb(207, 207, 207) !important;
     color: rgb(21, 21, 27);
+}
+
+#info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100px;
+    background-color: rgb(21, 21, 27);
+    padding-left: 5px;
+}
+#info ul {
+    list-style: none;
 }
