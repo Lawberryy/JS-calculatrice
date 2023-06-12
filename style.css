@@ -105,7 +105,9 @@ main div:not(#result) {
     top: 0;
     right: 0;
     width: 200px;
-    background-color: rgb(21, 21, 27);
+    background-color: orange;
+    color: #fff;
+    font-style: italic;
     padding: 10px;
     z-index: 2;
 }
