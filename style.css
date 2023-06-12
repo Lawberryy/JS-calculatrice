@@ -6,11 +6,12 @@
 
 body {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 100vh;
     background-color: rgb(42, 42, 42);
     color: rgb(232, 232, 232);
+    padding: 30px 0;
 }
 main {
     display: flex;
@@ -46,13 +47,9 @@ main {
     padding-left: 10px;
     padding-bottom: 12px;
     overflow: hidden;
+    max-width: 100%;
 }
 
-/* #delete {
-    grid-column: 1/4;
-    grid-row: 2/3;
-    background-color: burlywood;
-} */
 #reset {
     grid-column: 1/2;
     grid-row: 2/3;
@@ -65,13 +62,8 @@ main {
 }
 #equals {grid-row: 6/7;}
 
-/* #numbersKeys {
-    grid-column: 1/4;
-    grid-row: 3/7;
-    background-color: coral;
-} */
 
-div:not(#result):not(#info) {
+main div:not(#result) {
     cursor: pointer; 
     font-size: 20px; 
     border-radius: 50%; 
@@ -112,21 +104,33 @@ div:not(#result):not(#info) {
     position: absolute;
     top: 0;
     right: 0;
-    width: 300px;
-    height: 100px;
+    width: 200px;
     background-color: rgb(21, 21, 27);
-    padding-left: 5px;
+    padding: 10px;
+    z-index: 2;
 }
 #info ul {
     list-style: none;
 }
 
-/* #history {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+#history {
     width: 300px;
     height: 200px;
     background-color: rgb(21, 21, 27);
-    padding: 5px;
-} */
+    padding: 15px;
+    overflow: auto;
+    border-radius: 30px;
+}
+h2 {
+    text-align: center;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 700px) {
+    body {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
